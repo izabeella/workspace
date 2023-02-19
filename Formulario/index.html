@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Create Account</h2>
+		<form method="post" onsubmit="event.preventDefault()">
+			<div>
+				<label for="nombre"><p>Nombre</p></label>
+				<input id="nombre" type="text" name="nombre" onblur="validarNombre()" required>
+				<span id="nombre-p"></span>
+			</div>
+			<div>
+				<label for="correo"><p>Email</p></label>
+				<input id="correo" type="email" name="correo" onblur="validarCorreo()" required>
+				<span id="correo-p"></span>
+			</div>
+			<div>
+				<label for="clave"><p>Clave</p></label>
+				<input id="clave" type="password" name="clave" minlength="8" onblur="validarClave()" required>
+				<span id="clave-p"></span>
+			</div>
+			<div>
+				<label for="conf-clave"><p>Confirme su clave</p></label>
+				<input id="conf-clave" type="password" name="conf-clave" minlength="8" onblur="validarConfClave()" required>
+				<span id="confclave-p"></span>
+			</div>
+			<div class="boton-div">
+				<input id="boton" type="submit" name="enviar" value="ENVIAR" onclick="validarDatos()">
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
