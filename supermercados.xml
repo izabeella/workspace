@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Lidl>
+    <direccion>Avenida de la Constitucion, 15</direccion>
+    <poblacion>Madrid</poblacion>
+    <codigoPostal>28850</codigoPostal>
+    <geolocalizacion>40°43'24.34"N 3°36'98.32"O"</geolocalizacion>
+    <categorias>
+        <carne>
+            <producto>carne de cerdo</producto>
+            <marca>Deluxe</marca>
+            <datos>
+                <unidad>1</unidad>
+                <cantidad>500</cantidad>
+                <unidadMedida>gramos</unidadMedida>
+            </datos>
+            <precio>3.95</precio>
+            <oferta>
+                <vigente>false</vigente>
+                <fechaInicio></fechaInicio>
+                <fechaFin></fechaFin>
+            </oferta>
+            <adquirido>false</adquirido>
+        </carne>
+        <carne>
+            <producto>carne de pollo</producto>
+            <marca>Lidl</marca>
+            <datos>
+                <unidad>1</unidad>
+                <cantidad>650</cantidad>
+                <unidadMedida>gramos</unidadMedida>
+            </datos>
+            <precio>6.95</precio>
+            <oferta>
+                <vigente>false</vigente>
+                <fechaInicio></fechaInicio>
+                <fechaFin></fechaFin>
+            </oferta>
+            <adquirido>true</adquirido>
+        </carne>
+    </categorias>
+    <categorias>
+        <fruta>
+            <producto>mango</producto>
+            <marca>Lidl</marca>
+            <datos>
+                <unidad>1</unidad>
+                <cantidad>200</cantidad>
+                <unidadMedida>gramos</unidadMedida>
+            </datos>
+            <precio>1.95</precio>
+            <oferta>
+                <vigente>false</vigente>
+                <fechaInicio></fechaInicio>
+                <fechaFin></fechaFin>
+            </oferta>
+            <adquirido>false</adquirido>
+        </fruta>
+        <fruta>
+            <producto>fresa</producto>
+            <marca>Lidl</marca>
+            <datos>
+                <unidad>1</unidad>
+                <cantidad>300</cantidad>
+                <unidadMedida>gramos</unidadMedida>
+            </datos>
+            <precio>1.95</precio>
+            <oferta>
+                <vigente>true</vigente>
+                <fechaInicio>05/04/2023</fechaInicio>
+                <fechaFin>21/04/2023</fechaFin>
+            </oferta>
+            <adquirido>false</adquirido>
+        </fruta>
+    </categorias>
+</Lidl>
