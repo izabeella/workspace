@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Lidl>
+<supermercado nombre="Lidl">
     <direccion>Avenida de la Constitucion, 15</direccion>
     <poblacion>Madrid</poblacion>
     <codigoPostal>28850</codigoPostal>
     <geolocalizacion>40°43'24.34"N 3°36'98.32"O"</geolocalizacion>
     <categorias>
-        <carne>
-            <producto>carne de cerdo</producto>
+        <categoria nombre= "carne">
+            <producto nombre= "carne de cerdo"</producto>
             <marca>Deluxe</marca>
             <datos>
                 <unidad>1</unidad>
@@ -21,9 +21,9 @@
                 <fechaFin></fechaFin>
             </oferta>
             <adquirido>false</adquirido>
-        </carne>
-        <carne>
-            <producto>carne de pollo</producto>
+        </categoria>
+        <categoria nombre= "carne">
+            <producto nombre= "carne de pollo"</producto>
             <marca>Lidl</marca>
             <datos>
                 <unidad>1</unidad>
@@ -37,11 +37,11 @@
                 <fechaFin></fechaFin>
             </oferta>
             <adquirido>true</adquirido>
-        </carne>
+        </categoria>
     </categorias>
     <categorias>
-        <fruta>
-            <producto>mango</producto>
+        <categoria nombre= "fruta">
+            <producto nombre= "mango" </producto>
             <marca>Lidl</marca>
             <datos>
                 <unidad>1</unidad>
@@ -55,9 +55,9 @@
                 <fechaFin></fechaFin>
             </oferta>
             <adquirido>false</adquirido>
-        </fruta>
-        <fruta>
-            <producto>fresa</producto>
+        </categoria>
+        <categoria nombre= "fruta">
+            <producto nombre= "fresa" </producto>
             <marca>Lidl</marca>
             <datos>
                 <unidad>1</unidad>
@@ -71,6 +71,6 @@
                 <fechaFin>21/04/2023</fechaFin>
             </oferta>
             <adquirido>false</adquirido>
-        </fruta>
+        </categoriaa>
     </categorias>
-</Lidl>
+</supermercado>
