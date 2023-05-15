@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-05-2023 a las 19:47:21
+-- Tiempo de generación: 15-05-2023 a las 20:03:40
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -24,21 +24,32 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `empleado`
+-- Estructura de tabla para la tabla `usuario`
 --
 
-CREATE TABLE `empleado` (
-  `nombre` varchar(25) NOT NULL,
-  `apellido` varchar(25) NOT NULL,
-  `email` varchar(50) NOT NULL
+CREATE TABLE `usuario` (
+  `ID` int(11) NOT NULL,
+  `NOMBRE` varchar(20) NOT NULL,
+  `APELLIDO` varchar(20) NOT NULL,
+  `EMAIL` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `empleado`
+-- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `empleado` (`nombre`, `apellido`, `email`) VALUES
-('Raquel', 'Sanz', 'RaquelSanz@gmail.com');
+INSERT INTO `usuario` (`ID`, `NOMBRE`, `APELLIDO`, `EMAIL`) VALUES
+(1, 'Raquel', 'Sanz', 'RaquelSanz@gmail.com');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
