@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+<head>
+        <meta charset="utf-8">
+        <title>Formulario PHP</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="group">
+        <form method="POST" action="index.php">
+            <h2>Formulario PHP</h2>
+            <label for="nombre">Nombre (requerido)</label>
+            <input id="inputNombre" type="text" name="nombre" class="form-input" onblur="comprobarTexto('inputNombre')" required/>
+
+            <label for="apellido">Apellido (requerido)</label>
+            <input id="inputApellido" type="text" name="apellido" class="form-input" onblur="comprobarTexto('inputApellido')" required/>
+
+            <label for="email">Email (requerido)</label>
+            <input id="inputEmail" type="email" name="email" class="form-input" onblur="comprobarEmail('inputEmail')" required/>
+            
+            <input id="submitBtn" class="form-btn" name="submit" type="submit" value="Suscribirse"/>
+
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+    
