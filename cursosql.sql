@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-05-2023 a las 20:03:40
+-- Tiempo de generación: 05-06-2023 a las 18:44:49
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuario`
+-- Estructura de tabla para la tabla `usuarios`
 --
 
-CREATE TABLE `usuario` (
+CREATE TABLE `usuarios` (
   `ID` int(11) NOT NULL,
   `NOMBRE` varchar(20) NOT NULL,
   `APELLIDO` varchar(20) NOT NULL,
@@ -35,21 +35,35 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `usuario`
+-- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuario` (`ID`, `NOMBRE`, `APELLIDO`, `EMAIL`) VALUES
-(1, 'Raquel', 'Sanz', 'RaquelSanz@gmail.com');
+INSERT INTO `usuarios` (`ID`, `NOMBRE`, `APELLIDO`, `EMAIL`) VALUES
+(1, 'Maria', 'Perez', 'MariaPerez@gmail.com'),
+(2, 'Patricia', 'Leal', 'PatriciaLeal@gmail.c'),
+(3, 'Ana', 'Sanz', 'AnaSanz@gmail.com'),
+(4, 'Pablo', 'Aquiles', 'PabloAquiles@gmail.c'),
+(5, 'Lucas', 'Polo', 'LucasPolo@gmail.com');
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `usuario`
+-- Indices de la tabla `usuarios`
 --
-ALTER TABLE `usuario`
+ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
