@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+<head>
+        <meta charset="utf-8">
+        <title>Formulario</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="group">
+        <form method="POST" action="index.php">
+            <h2>Formulario</h2>
+            <label for="inputNombre">Nombre (requerido)</label>
+            <input id="inputNombre" type="text" name="nombre" class="form-input" onblur="comprobarTexto('inputNombre')" maxlength="30" required/>
+
+            <label for="inputPrimerApellido">Primer Apellido (requerido)</label>
+            <input id="inputPrimerApellido" type="text" name="primerApellido" class="form-input" onblur="comprobarTexto('inputPrimerApellido')" maxlength="30" required/>
+
+            <label for="inputSegundoApellido">Segundo Apellido (requerido)</label>
+            <input id="inputSegundoApellido" type="text" name="segundoApellido" class="form-input" onblur="comprobarTexto('inputSegundoApellido')" maxlength="30" required/>
+
+            <label for="inputEmail">Email (requerido)</label>
+            <input id="inputEmail" type="email" name="email" class="form-input" onblur="comprobarEmail('inputEmail')" maxlength="50" required/>
+            
+            <label for="inputLogin">Login (requerido)</label>
+            <input id="inputLogin" type="text" name="login" class="form-input" onblur="comprobarTexto('inputLogin')" maxlength="30" required/>
+            
+            <label for="inputPwd">Contraseña (requerido)</label>
+            <input id="inputPwd" type="password" name="pwd" class="form-input" onblur="comprobarPwd('inputPwd')" minlength="4" maxlength="8" required/>
+            
+            <input id="submitBtn" class="form-btn" name="submit" type="submit" onclick="subirDatos()"  value="Suscribirse"/>
+
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
